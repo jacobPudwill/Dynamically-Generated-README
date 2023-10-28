@@ -29,62 +29,61 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `
-  # ${data.title}
+  return `# ${data.title}
 
-  ## Description
+## Description
 
-  ${data.description}
+${data.description}
 
-  ## Table of Contents
+## Table of Contents
 
-  - [Installation](#installation)
+- [Installation](#installation)
 
-  - [Usage](#usage)
+- [Usage](#usage)
 
-  ${renderLicenseLink(data.license)}
+${renderLicenseLink(data.license)}
 
-  - [Contribution](#contribution)
+- [Contribution](#contribution)
 
-  - [Tests](#tests)
+- [Tests](#tests)
 
-  - [Questions](#questions)
+- [Questions](#questions)
 
-  ## Installation
+## Installation
 
-  To install necassary dependencies, run the following command:
+To install necassary dependencies, run the following command:
 
-  \`\`\`
-  ${data.installation}
-  \`\`\`
+\`\`\`
+${data.installation}
+\`\`\`
 
-  ## Usage
+## Usage
 
-  ${data.usage}
+${data.usage}
 
-  ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
 
-  ## Badges
+## Badges
 
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
-  ## Contribution
+## Contribution
 
-  ${data.contribution}
+${data.contribution}
 
-  ## Tests
+## Tests
 
-  To run tests, run the following command:
+To run tests, run the following command:
 
-  \`\`\`
-  ${data.test}
-  \`\`\`
+\`\`\`
+${data.test}
+\`\`\`
 
-  ## Questions
+## Questions
 
-  If you have any questions about the repository, you can reach out to me at ${data.email}.
-  For more of my work visit [${data.github}](https://github.com/${data.github}/)
-  `;
+If you have any questions about the repository, you can reach out to me at ${data.email}.
+For more of my work visit [${data.github}](https://github.com/${data.github}/)
+`;
 }
 
 module.exports = generateMarkdown;
