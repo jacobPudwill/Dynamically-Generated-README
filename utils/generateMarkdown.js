@@ -22,7 +22,7 @@ function renderLicenseSection(license) {
   if (license !== 'None') {
     return `## License
 
-  This project is licensed under the ${license} license.`
+This project is licensed under the ${license} license.`
   }
   return '';
 }
@@ -42,6 +42,8 @@ ${data.description}
 - [Usage](#usage)
 
 ${renderLicenseLink(data.license)}
+
+- [Badges](#badges)
 
 - [Contribution](#contribution)
 
