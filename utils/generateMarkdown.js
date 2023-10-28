@@ -20,11 +20,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return `
-    ## License
+    return `## License
 
-    This project is licensed under the ${license} license.
-    `
+  This project is licensed under the ${license} license.`
   }
   return '';
 }
@@ -46,7 +44,7 @@ function generateMarkdown(data) {
 
   ${renderLicenseLink(data.license)}
 
-  - [Contributing](#contributing)
+  - [Contribution](#contribution)
 
   - [Tests](#tests)
 
@@ -70,9 +68,9 @@ function generateMarkdown(data) {
 
   ${renderLicenseBadge(data.license)}
 
-  ## Contributing
+  ## Contribution
 
-  ${data.contributing}
+  ${data.contribution}
 
   ## Tests
 
